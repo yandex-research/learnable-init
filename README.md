@@ -21,4 +21,17 @@ The proposed approach (DIMAML) learns task-agnostic initial weight distributions
 2. Grab or build a working python enviromnent. [Anaconda](https://www.anaconda.com/) works fine.
 3. Install packages from `requirements.txt`
 4. Download the data: `cd ./notebooks/ && bash download_data.sh` (3.1 Gb)
-5. Open jupyter notebook in `./notebooks/` and you're done!
+5. Open jupyter notebook in `./notebooks/` and you're done! (All runs require a single GPU with ≤12 Gb)
+
+## Cite
+
+```
+@inproceedings{
+    baranchuk2021discovering,
+    title={Discovering Weight Initializers with Meta Learning},
+    author={Dmitry Baranchuk and Artem Babenko},
+    booktitle={8th ICML Workshop on Automated Machine Learning (AutoML) },
+    year={2021},
+    url={https://openreview.net/forum?id=AwT_WWtEUj}
+}
+```
