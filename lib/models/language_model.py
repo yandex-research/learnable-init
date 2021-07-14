@@ -5,8 +5,8 @@ from copy import deepcopy
 
 class LanguageModel(nn.Module):
     """ 
-        While cuDNN LSTM does not allow for second backpropagation,
-        we use a less efficient LSTM implemetation for DIMAML.
+        While cuDNN LSTM (nn.LSTM) does not allow the second backprop,
+        we use less efficient nn.LSTMCell for DIMAML.
     """
     def __init__(self, voc_size, emb_size, hid_size, drop_prob=0.1):
         super().__init__()
